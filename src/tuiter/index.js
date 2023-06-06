@@ -26,10 +26,10 @@ function Tuiter() {
             <div>
                 <Nav />
                 <div className="row">
-                    <div className="col-2">
+                    <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-1 d-sm-none d-md-block d-none">
                         <NavigationSidebar />
                     </div>
-                    <div className="col-7">
+                    <div className="col-xl-7 col-lg-11 col-md-11 col-sm-12 col-xs-12">
                         <Routes>
                             <Route path="/home" element={<HomeScreen />} />
                             <Route path="/explore" element={<ExploreScreen />} />
@@ -37,7 +37,7 @@ function Tuiter() {
                             <Route path="/profile" element={<ProfileScreen />} />
                         </Routes>
                     </div>
-                    <div className="col-xl-3 d-xxl-block">
+                    <div className="col-xl-3 d-none d-xl-block">
                         <WhoToFollowList />
                     </div>
                 </div>

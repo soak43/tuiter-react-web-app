@@ -11,14 +11,14 @@ const NavigationSidebar = () => {
     return (
 
         <div className="list-group">
-            <Link to={"/tuiter/home "} className={`list-group-item ${active === "home" ? "active" : ""}`}><GoHome className="me-2" />Home</Link>
-            <Link to={"/tuiter/explore "} className={`list-group-item ${active === "explore" ? "active" : ""}`}><GoSearch className="me-2" />Explore</Link>
-            <Link to={"/tuiter/notifications "} className={`list-group-item ${active === "notifications" ? "active" : ""}`}><GoBell className="me-2" />Notifications</Link>
-            <Link to={"/tuiter/messages "} className={`list-group-item ${active === "messages" ? "active" : ""}`}><GoComment className="me-2"/>Messages</Link>
-            <Link to={"/tuiter/bookmarks "} className={`list-group-item ${active === "bookmarks" ? "active" : ""}`}><GoBookmark className="me-2" />Bookmarks</Link>
-            <Link to={"/tuiter/lists "} className={`list-group-item ${active === "lists" ? "active" : ""}`}><GoChecklist className="me-2" />Lists</Link>
-            <Link to={"/tuiter/profile "} className={`list-group-item ${active === "profile" ? "active" : ""}`}><GoPerson className="me-2" />Profile</Link>
-            <Link to={"/tuiter/more "} className={`list-group-item ${active === "more" ? "active" : ""}`}><GoKebabHorizontal className="me-2" />More</Link>
+            <Link to={"/tuiter/home "} className={`list-group-item ${active === "home" ? "active" : ""}`}><GoHome className="me-2" /><span className = "d-none d-xl-inline">Home</span></Link>
+            <Link to={"/tuiter/explore "} className={`list-group-item ${active === "explore" ? "active" : ""}`}><GoSearch className="me-2" /><span className = "d-none d-xl-inline">Explore</span></Link>
+            <Link to={"/tuiter/notifications "} className={`list-group-item ${active === "notifications" ? "active" : ""}`}><GoBell className="me-2" /><span className = "d-none d-xl-inline">Notifications</span></Link>
+            <Link to={"/tuiter/messages "} className={`list-group-item ${active === "messages" ? "active" : ""}`}><GoComment className="me-2"/><span className = "d-none d-xl-inline">Messages</span></Link>
+            <Link to={"/tuiter/bookmarks "} className={`list-group-item ${active === "bookmarks" ? "active" : ""}`}><GoBookmark className="me-2" /><span className = "d-none d-xl-inline">Bookmarks</span></Link>
+            <Link to={"/tuiter/lists "} className={`list-group-item ${active === "lists" ? "active" : ""}`}><GoChecklist className="me-2" /><span className = "d-none d-xl-inline">Lists</span></Link>
+            <Link to={"/tuiter/profile "} className={`list-group-item ${active === "profile" ? "active" : ""}`}><GoPerson className="me-2" /><span className = "d-none d-xl-inline">Profile</span></Link>
+            <Link to={"/tuiter/more "} className={`list-group-item ${active === "more" ? "active" : ""}`}><GoKebabHorizontal className="me-2" /><span className = "d-none d-xl-inline">More</span></Link>
         </div>
 
     );
