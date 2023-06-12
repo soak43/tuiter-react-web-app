@@ -101,13 +101,12 @@ const TuitItem = ({
                                 {/* Tuit like button */}
                             </div>
                             <div className="col-2">
-                                {tuit.disliked && (<button onClick={() => {
-                                    updateTuitHandler({...tuit, dislikes: tuit.dislikes - 1, disliked: false})
-                                }} className="btn btn-white"><AiFillDislike/>{tuit.dislikes}</button>)}
-
-                                {!tuit.disliked && (<button onClick={() => {
+                                {/*{tuit.disliked && (<button onClick={() => {*/}
+                                {/*    updateTuitHandler({...tuit, dislikes: tuit.dislikes - 1, disliked: false})*/}
+                                {/*}} className="btn btn-white"><AiFillDislike/>{tuit.dislikes}</button>)}*/}
+                                {<button onClick={() => {
                                     updateTuitHandler({...tuit, dislikes: tuit.dislikes + 1, disliked: true})
-                                }} className="btn btn-white"><AiOutlineDislike/>{tuit.dislikes}</button>)}
+                                }} className="btn btn-white"><AiOutlineDislike/>{tuit.dislikes}</button>}
 
                             </div>
                             <div className="col-2 mt-2">

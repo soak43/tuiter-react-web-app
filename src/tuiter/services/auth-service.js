@@ -1,6 +1,6 @@
 import axios from "axios";
 const SERVER_API_URL = process.env.REACT_APP_SERVER_API_URL;
-const USERS_URL = `/${SERVER_API_URL}/users`;
+const USERS_URL = `${SERVER_API_URL}/users`;
 // const USERS_URL = `${SERVER_API_URL}/api/users`;
 
 console.log(SERVER_API_URL);
@@ -24,8 +24,9 @@ export const logout = async () => {
 };
 
 export const profile = async () => {
-    const response = await api.post(`${USERS_URL}/profile`);
     console.log("Inside profile service");
+    const response = await api.post(`${USERS_URL}/profile`);
+    // console.log("Inside profile service");
     console.log("Response data= ", response.data);
     return response.data;
 };

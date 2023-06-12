@@ -41,32 +41,30 @@ function ProfileScreen(){
     return(
         <div>
             <h1>Profile</h1>
-            <pre>{JSON.stringify(currentUser, null,2)}</pre>
+            {/*<pre>{JSON.stringify(currentUser, null,2)}</pre>*/}
             {profile && (<div>
                 <div>
                     <label> First Name </label>
-                    <input type="text" value={profile.firstName}
+                    <input className="form-control mt-2" type="text" value={profile.firstName}
                     onChange={(event) => {
-                        const newProfile = {...profile, firstName: event.target.value,
-                    };
+                        const newProfile = {...profile, firstName: event.target.value};
                     setProfile(newProfile);
                     }}/>
                 </div>
                 <div>
-                    <label> Last Name </label>
-                    <input type="text" value={profile.lastName}
+                    <label className="mt-2"> Last Name </label>
+                    <input className="form-control mt-2" type="text" value={profile.lastName}
                         onChange={(event) => {
-                        const newProfile = {...profile, lastName: event.target.value,
-                    };
+                        const newProfile = {...profile, lastName: event.target.value};
                         setProfile(newProfile);
                     }}/>
                 </div>
             </div>)}
-            <button className="btn btn-danger" onClick={() => {
+            <button className="btn btn-danger mt-2" onClick={() => {
                 dispatch(logoutThunk());
                 navigate("/tuiter/login");
             }}>Logout</button>
-            <button className="btn btn-primary float-end" onClick={save}>Save</button>
+            <button className="btn btn-primary float-end mt-2" onClick={save}>Save</button>
         </div>
     );
 }
