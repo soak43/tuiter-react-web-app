@@ -20,7 +20,8 @@ export const profileThunk = createAsyncThunk(
     "auth/profile",
     async () => {
         console.log("Inside profile thunk");
-        return await authService.profile();
+        const response =  await authService.profile();
+        return response;
     }
 );
 

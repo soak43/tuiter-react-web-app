@@ -29,6 +29,7 @@ export const profile = async () => {
     // console.log("Inside profile service");
     console.log("Response data= ", response.data);
     return response.data;
+
 };
 
 export const updateUser = async (user) => {

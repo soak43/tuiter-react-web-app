@@ -62,8 +62,9 @@ const TuitItem = ({
                             <div className="col-5"> 
                                 <div>{tuit.username} <GoVerified/>. {tuit.time} {tuit.handle} </div>
                             </div>
-                            <div className="col-5">
-                            <button className="btn btn-white float-end vertical-align" onClick={() => deleteTuitHandler(tuit._id)}><RxCross1 /></button>
+                            <div className="col-4"></div>
+                            <div className="col-1">
+                            <button className="btn btn-white float-end ms-2 vertical-align" onClick={() => deleteTuitHandler(tuit._id)}><RxCross1 /></button>
                             </div>
                         </div>
                         <div className="small">
